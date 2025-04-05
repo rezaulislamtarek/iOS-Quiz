@@ -1,0 +1,224 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "question": "What programming language is primarily used for iOS app development?",
+      "options": [
+        "Java",
+        "Kotlin",
+        "Swift",
+        "C#"
+      ],
+      "answer": "Swift"
+    },
+    {
+      "id": 2,
+      "question": "Which IDE is officially supported by Apple for iOS app development?",
+      "options": [
+        "Android Studio",
+        "Visual Studio",
+        "Eclipse",
+        "Xcode"
+      ],
+      "answer": "Xcode"
+    },
+    {
+      "id": 3,
+      "question": "What is the UI framework introduced by Apple in iOS 13 for declarative UI design?",
+      "options": [
+        "UIKit",
+        "SwiftUI",
+        "React Native",
+        "Flutter"
+      ],
+      "answer": "SwiftUI"
+    },
+    {
+      "id": 4,
+      "question": "Which of the following is NOT a valid app state in iOS?",
+      "options": [
+        "Inactive",
+        "Active",
+        "Background",
+        "Terminated"
+      ],
+      "answer": "Terminated"
+    },
+    {
+      "id": 5,
+      "question": "What is the purpose of the AppDelegate in an iOS application?",
+      "options": [
+        "To manage the app's data model",
+        "To handle app lifecycle events",
+        "To define the app's UI",
+        "To manage network connections"
+      ],
+      "answer": "To handle app lifecycle events"
+    },
+    {
+      "id": 6,
+      "question": "Which framework is used for persisting data on iOS?",
+      "options": [
+        "Core Data",
+        "UIKit",
+        "Foundation",
+        "AVFoundation"
+      ],
+      "answer": "Core Data"
+    },
+    {
+      "id": 7,
+      "question": "What is the minimum iOS version required to support SwiftUI?",
+      "options": [
+        "iOS 11",
+        "iOS 12",
+        "iOS 13",
+        "iOS 14"
+      ],
+      "answer": "iOS 13"
+    },
+    {
+      "id": 8,
+      "question": "Which of the following is NOT a valid view controller lifecycle method?",
+      "options": [
+        "viewDidLoad",
+        "viewWillAppear",
+        "viewDidUpdate",
+        "viewDidDisappear"
+      ],
+      "answer": "viewDidUpdate"
+    },
+    {
+      "id": 9,
+      "question": "What is the purpose of Auto Layout in iOS development?",
+      "options": [
+        "To automatically update app content",
+        "To create responsive user interfaces that adapt to different screen sizes",
+        "To manage memory allocation",
+        "To handle network requests"
+      ],
+      "answer": "To create responsive user interfaces that adapt to different screen sizes"
+    },
+    {
+      "id": 10,
+      "question": "Which protocol must be implemented to use a UITableView with custom cells?",
+      "options": [
+        "UITableViewDataSource",
+        "UITableViewDelegate",
+        "UITableViewCell",
+        "UITableController"
+      ],
+      "answer": "UITableViewDataSource"
+    },
+    {
+      "id": 11,
+      "question": "What does ARC stand for in iOS development?",
+      "options": [
+        "Automatic Reference Counting",
+        "Apple Runtime Controller",
+        "Application Runtime Compiler",
+        "Advanced Retention Counter"
+      ],
+      "answer": "Automatic Reference Counting"
+    },
+    {
+      "id": 12,
+      "question": "Which of the following is used to handle asynchronous operations in Swift?",
+      "options": [
+        "Threads",
+        "GCD (Grand Central Dispatch)",
+        "Timers",
+        "All of the above"
+      ],
+      "answer": "GCD (Grand Central Dispatch)"
+    },
+    {
+      "id": 13,
+      "question": "What is the file extension for Swift files?",
+      "options": [
+        ".swift",
+        ".swft",
+        ".sf",
+        ".swt"
+      ],
+      "answer": ".swift"
+    },
+    {
+      "id": 14,
+      "question": "Which framework is used for implementing push notifications in iOS?",
+      "options": [
+        "Core Location",
+        "UserNotifications",
+        "PushKit",
+        "Both B and C"
+      ],
+      "answer": "Both B and C"
+    },
+    {
+      "id": 15,
+      "question": "What is the default navigation pattern in iOS?",
+      "options": [
+        "Tab Bar",
+        "Navigation Controller",
+        "Split View Controller",
+        "Page View Controller"
+      ],
+      "answer": "Navigation Controller"
+    },
+    {
+      "id": 16,
+      "question": "Which of the following is NOT a valid method to pass data between view controllers?",
+      "options": [
+        "Segues",
+        "Delegation",
+        "Notifications",
+        "Global Variables"
+      ],
+      "answer": "Global Variables"
+    },
+    {
+      "id": 17,
+      "question": "What is the purpose of a closure in Swift?",
+      "options": [
+        "To create UI elements",
+        "To encapsulate functionality that can be passed around and executed later",
+        "To handle app transitions",
+        "To manage memory"
+      ],
+      "answer": "To encapsulate functionality that can be passed around and executed later"
+    },
+    {
+      "id": 18,
+      "question": "Which of the following is used to create an HTTP request in iOS?",
+      "options": [
+        "URLSession",
+        "HTTPRequest",
+        "Alamofire",
+        "Both A and C"
+      ],
+      "answer": "Both A and C"
+    },
+    {
+      "id": 19,
+      "question": "What is the purpose of the Info.plist file in an iOS app?",
+      "options": [
+        "To store user data",
+        "To define app configuration and permissions",
+        "To manage app layout",
+        "To handle app networking"
+      ],
+      "answer": "To define app configuration and permissions"
+    },
+    {
+      "id": 20,
+      "question": "Which design pattern is commonly used in iOS for communication between objects?",
+      "options": [
+        "Singleton",
+        "Observer",
+        "Delegate",
+        "Factory"
+      ],
+      "answer": "Delegate"
+    }
+  ]
+}
