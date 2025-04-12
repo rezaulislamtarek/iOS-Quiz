@@ -36,7 +36,7 @@ class QuizPlayerController: UIViewController {
     // MARK: - Lifecycle methods
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        navigationController?.navigationBar.prefersLargeTitles = false
         setupUI()
         startQuiz()
         bindviewModel(quizViewModel)

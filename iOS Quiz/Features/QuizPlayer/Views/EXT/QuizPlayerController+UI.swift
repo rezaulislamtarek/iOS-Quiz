@@ -10,7 +10,7 @@ import UIKit
 extension QuizPlayerController {
      
     func setupUI() {
-        title = "iOS Quiz"
+        title = "Quiz player"
         view.backgroundColor = .systemBackground
         
         view.addSubview(progressLabel)
