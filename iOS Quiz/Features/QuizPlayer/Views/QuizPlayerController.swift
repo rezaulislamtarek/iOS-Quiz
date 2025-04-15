@@ -16,12 +16,14 @@ class QuizPlayerController: UIViewController {
     var currentQuestionIndex = 0
     var currentQuestionVC : QuestionViewController?
     let topic : String
+    let remainigTime : Int = 5
     
     
     // MARK: - UI Components
     let containerView: UIView = .createContaineView()
     let progressLabel: UILabel = .createLabel()
     let activityIndicator: UIActivityIndicatorView = .createLoadingIndicator()
+    let timerLabel : UILabel = .createLabel()
     
     
     // MARK: - Initialization
@@ -40,11 +42,19 @@ class QuizPlayerController: UIViewController {
         super.viewDidLoad()
         navigationController?.navigationBar.prefersLargeTitles = false
         setupUI()
+        timerLabel.text = "00:00"
+        timerLabel.textColor = .white
         startQuiz()
         bindviewModel(quizViewModel)
+        startTimer()
     }
     
-    
+    private func startTimer() {
+        quizViewModel.setRemainingTime(remainigTime)
+        timerLabel.font = UIFont.monospacedDigitSystemFont(ofSize: 40, weight: .medium)
+        timerLabel.textAlignment = .center
+        quizViewModel.startTimer()
+    }
     
     func bindviewModel(_ viewModel: QuizPlayerViewModel) {
         viewModel.$questions
@@ -55,6 +65,14 @@ class QuizPlayerController: UIViewController {
                 self?.loadQuestion(at: self!.currentQuestionIndex)
                 self?.updateProgressLabel()
             }.store(in: &cancellables)
+        
+        
+        viewModel.$timeText
+            .receive(on: DispatchQueue.main)
+            .sink(receiveValue: { [weak self] timeText in
+                self?.timerLabel.text = timeText
+            })
+            .store(in: &cancellables)
     }
     
 }
