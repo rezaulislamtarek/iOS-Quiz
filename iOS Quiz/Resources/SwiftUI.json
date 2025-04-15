@@ -1,0 +1,139 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "question": "What is SwiftUI?",
+      "options": ["A networking library", "A declarative UI framework by Apple", "A database tool", "An animation engine"],
+      "answer": "A declarative UI framework by Apple"
+    },
+    {
+      "id": 2,
+      "question": "Which iOS version introduced SwiftUI?",
+      "options": ["iOS 11", "iOS 12", "iOS 13", "iOS 14"],
+      "answer": "iOS 13"
+    },
+    {
+      "id": 3,
+      "question": "Which keyword is used to create reactive UI in SwiftUI?",
+      "options": ["@Binding", "@State", "@Reactive", "@Published"],
+      "answer": "@State"
+    },
+    {
+      "id": 4,
+      "question": "What does the @Binding property wrapper do in SwiftUI?",
+      "options": [
+        "Creates a constant value",
+        "Binds to a value owned by another view",
+        "Creates a computed property",
+        "Watches changes in a model"
+      ],
+      "answer": "Binds to a value owned by another view"
+    },
+    {
+      "id": 5,
+      "question": "Which container arranges its children vertically in SwiftUI?",
+      "options": ["HStack", "VStack", "ZStack", "Grid"],
+      "answer": "VStack"
+    },
+    {
+      "id": 6,
+      "question": "Which view is used to overlay views in SwiftUI?",
+      "options": ["ZStack", "VStack", "HStack", "Group"],
+      "answer": "ZStack"
+    },
+    {
+      "id": 7,
+      "question": "Which modifier is used to handle a tap on a view?",
+      "options": [".onChange", ".onTapGesture", ".tapAction", ".handleTap"],
+      "answer": ".onTapGesture"
+    },
+    {
+      "id": 8,
+      "question": "How do you make a view respond to changes in a model?",
+      "options": ["Using @State", "Using @ObservedObject", "Using @Binding", "Using @Value"],
+      "answer": "Using @ObservedObject"
+    },
+    {
+      "id": 9,
+      "question": "Which modifier adds navigation capabilities to a SwiftUI view?",
+      "options": [".navigateTo", ".push", ".navigationLink", ".sheet"],
+      "answer": ".navigationLink"
+    },
+    {
+      "id": 10,
+      "question": "What is the role of the @EnvironmentObject wrapper?",
+      "options": [
+        "To create reusable styles",
+        "To share data across many views",
+        "To handle animations",
+        "To create text inputs"
+      ],
+      "answer": "To share data across many views"
+    },
+    {
+      "id": 11,
+      "question": "Which view is used to display a list of data in SwiftUI?",
+      "options": ["ListView", "ScrollView", "Table", "List"],
+      "answer": "List"
+    },
+    {
+      "id": 12,
+      "question": "Which modifier is used to present a modal sheet?",
+      "options": [".alert", ".sheet", ".popover", ".modal"],
+      "answer": ".sheet"
+    },
+    {
+      "id": 13,
+      "question": "Which SwiftUI property wrapper is used for navigation between views?",
+      "options": ["@ObservedObject", "@State", "@Binding", "@StateObject"],
+      "answer": "@State"
+    },
+    {
+      "id": 14,
+      "question": "Which animation method is used for smooth transitions in SwiftUI?",
+      "options": [".move", ".withAnimation", ".transition", ".slide"],
+      "answer": ".withAnimation"
+    },
+    {
+      "id": 15,
+      "question": "Which modifier allows scrolling in SwiftUI?",
+      "options": [".scrollable", "ScrollView", ".onScroll", ".list"],
+      "answer": "ScrollView"
+    },
+    {
+      "id": 16,
+      "question": "What does the @Published property wrapper do?",
+      "options": [
+        "Tracks changes to a value in a class",
+        "Creates a view",
+        "Changes font size",
+        "Plays an animation"
+      ],
+      "answer": "Tracks changes to a value in a class"
+    },
+    {
+      "id": 17,
+      "question": "Which layout stacks views horizontally?",
+      "options": ["VStack", "ZStack", "HStack", "StackView"],
+      "answer": "HStack"
+    },
+    {
+      "id": 18,
+      "question": "Which modifier makes a view full screen in SwiftUI?",
+      "options": [".fullScreenCover", ".sheet", ".cover", ".expand"],
+      "answer": ".fullScreenCover"
+    },
+    {
+      "id": 19,
+      "question": "How do you observe changes from a @Published property?",
+      "options": ["@StateObject", "@ObservedObject", "@Binding", "@Environment"],
+      "answer": "@ObservedObject"
+    },
+    {
+      "id": 20,
+      "question": "Which keyword is used to create a constant non-updating value?",
+      "options": ["@State", "@Constant", "@Immutable", "let"],
+      "answer": "let"
+    }
+  ]
+}

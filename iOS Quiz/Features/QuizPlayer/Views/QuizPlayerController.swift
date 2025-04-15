@@ -15,6 +15,7 @@ class QuizPlayerController: UIViewController {
     var score : Int = 0
     var currentQuestionIndex = 0
     var currentQuestionVC : QuestionViewController?
+    let topic : String
     
     
     // MARK: - UI Components
@@ -24,8 +25,9 @@ class QuizPlayerController: UIViewController {
     
     
     // MARK: - Initialization
-    init(viewModel : QuizPlayerViewModel = QuizPlayerViewModel()){
+    init(viewModel : QuizPlayerViewModel = QuizPlayerViewModel(), topic : String){
         self.quizViewModel = viewModel
+        self.topic = topic
         super.init(nibName: nil, bundle: nil)
     }
     
@@ -59,5 +61,5 @@ class QuizPlayerController: UIViewController {
 
 
 #Preview{
-    QuizPlayerController()
+    QuizPlayerController(topic: "Combine")
 }

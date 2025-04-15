@@ -13,8 +13,8 @@ final class QuizPlayerViewModel {
     
     private var cancellables = Set<AnyCancellable>()
     
-    func loadQuiz(){
-        loadJSON(filename: "iosquiz", as: Questions.self)
+    func loadQuiz(topic : String){
+        loadJSON(filename: topic, as: Questions.self)
             .sink { com in
                 switch com {
                 case .finished:

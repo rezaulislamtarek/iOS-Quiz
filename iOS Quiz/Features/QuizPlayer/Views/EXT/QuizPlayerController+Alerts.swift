@@ -12,7 +12,7 @@ extension QuizPlayerController {
         title : String,
         message :String,
         tryAgainAction : @escaping () -> Void,
-        exitAction : @escaping () -> Void,
+        exitAction : @escaping () -> Void
     ) -> UIAlertController{
         let aleartController = UIAlertController(title: title, message: message, preferredStyle: .alert)
         aleartController.addAction(UIAlertAction(title: "Try again", style: .default){ _ in tryAgainAction() })

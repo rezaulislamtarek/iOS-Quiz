@@ -10,7 +10,7 @@ import UIKit
 extension QuizPlayerController {
     func startQuiz() {
         activityIndicator.startAnimating()
-        quizViewModel.loadQuiz()
+        quizViewModel.loadQuiz(topic: topic)
     }
     
     func restartQuiz() {

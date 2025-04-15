@@ -1,0 +1,139 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which keyword is used to mark a function as asynchronous in Swift?",
+      "options": ["defer", "throw", "await", "async"],
+      "answer": "async"
+    },
+    {
+      "id": 2,
+      "question": "What keyword is used to wait for the result of an asynchronous function?",
+      "options": ["wait", "async", "await", "then"],
+      "answer": "await"
+    },
+    {
+      "id": 3,
+      "question": "Which Swift feature helps to avoid callback hell by using async/await?",
+      "options": ["Closures", "Delegates", "SwiftUI", "Structured Concurrency"],
+      "answer": "Structured Concurrency"
+    },
+    {
+      "id": 4,
+      "question": "Which type in Swift is used to represent a unit of asynchronous work?",
+      "options": ["DispatchQueue", "Task", "Thread", "RunLoop"],
+      "answer": "Task"
+    },
+    {
+      "id": 5,
+      "question": "How do you cancel a Task in Swift Concurrency?",
+      "options": ["task.stop()", "task.cancel()", "cancel(task)", "task.terminate()"],
+      "answer": "task.cancel()"
+    },
+    {
+      "id": 6,
+      "question": "Which property checks whether the current task is cancelled?",
+      "options": ["Task.isCancelled", "Task.cancelled", "Task.checkCancel", "Task.wasCancelled"],
+      "answer": "Task.isCancelled"
+    },
+    {
+      "id": 7,
+      "question": "What is the default priority of a Swift Task?",
+      "options": ["low", "medium", "userInitiated", "unspecified"],
+      "answer": "unspecified"
+    },
+    {
+      "id": 8,
+      "question": "Which attribute marks a function that can throw and is also asynchronous?",
+      "options": ["async throws", "throws async", "asyncThrowing", "try async"],
+      "answer": "async throws"
+    },
+    {
+      "id": 9,
+      "question": "What Swift construct allows concurrent iteration over an async sequence?",
+      "options": ["forEach", "for await", "mapAsync", "asyncLoop"],
+      "answer": "for await"
+    },
+    {
+      "id": 10,
+      "question": "Which Swift type is used for producing values over time asynchronously?",
+      "options": ["Publisher", "Stream", "AsyncSequence", "Future"],
+      "answer": "AsyncSequence"
+    },
+    {
+      "id": 11,
+      "question": "Which actor keyword in Swift provides isolation for mutable state?",
+      "options": ["thread", "actor", "isolated", "mutex"],
+      "answer": "actor"
+    },
+    {
+      "id": 12,
+      "question": "Which of the following ensures thread safety automatically in Swift?",
+      "options": ["actor", "class", "struct", "enum"],
+      "answer": "actor"
+    },
+    {
+      "id": 13,
+      "question": "What is the purpose of TaskGroup in Swift?",
+      "options": [
+        "To manage collections",
+        "To group multiple sync tasks",
+        "To run and manage multiple async tasks concurrently",
+        "To cancel all tasks at once"
+      ],
+      "answer": "To run and manage multiple async tasks concurrently"
+    },
+    {
+      "id": 14,
+      "question": "How do you access the current task inside an async context?",
+      "options": ["Task.current", "Task.get()", "Task()", "Task.currentTask"],
+      "answer": "Task.current"
+    },
+    {
+      "id": 15,
+      "question": "Which statement about actors in Swift is true?",
+      "options": [
+        "They share mutable state freely",
+        "They must subclass NSObject",
+        "They protect internal mutable state from data races",
+        "They replace all closures"
+      ],
+      "answer": "They protect internal mutable state from data races"
+    },
+    {
+      "id": 16,
+      "question": "What is used to mark a function inside an actor that is safe to call from outside?",
+      "options": ["public", "async", "isolated", "nonisolated"],
+      "answer": "nonisolated"
+    },
+    {
+      "id": 17,
+      "question": "Which async function runs concurrently with the caller?",
+      "options": ["Task.sleep()", "await", "Task{}", "DispatchQueue.async"],
+      "answer": "Task{}"
+    },
+    {
+      "id": 18,
+      "question": "Which Swift feature best replaces completion handlers?",
+      "options": ["async/await", "Closures", "KVO", "Combine"],
+      "answer": "async/await"
+    },
+    {
+      "id": 19,
+      "question": "Which of the following is NOT a valid Task priority in Swift?",
+      "options": ["high", "userInitiated", "utility", "background"],
+      "answer": "high"
+    },
+    {
+      "id": 20,
+      "question": "Which of the following is NOT a benefit of Swift Concurrency?",
+      "options": [
+        "Cleaner async code",
+        "Safer multithreading",
+        "Improved app size",
+        "Automatic task cancellation"
+      ],
+      "answer": "Improved app size"
+    }
+  ]
+}

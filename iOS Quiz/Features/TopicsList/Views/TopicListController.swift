@@ -84,7 +84,7 @@ extension TopicListController : UITableViewDelegate, UITableViewDataSource {
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("Tapped on: \(topics[indexPath.row].name)")
-        let playerController = QuizPlayerController()
+        let playerController = QuizPlayerController(topic: topics[indexPath.row].name)
         navigationController?.pushViewController(playerController, animated: true)
         tableView.deselectRow(at: indexPath, animated: true)
     }

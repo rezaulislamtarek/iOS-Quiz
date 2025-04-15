@@ -1,0 +1,225 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "question": "What does the @Published property wrapper do in Combine?",
+      "options": [
+        "Publishes values only once",
+        "Automatically exposes a publisher when the property changes",
+        "Hides the property from subscribers",
+        "Transforms values to uppercase"
+      ],
+      "answer": "Automatically exposes a publisher when the property changes"
+    },
+    {
+      "id": 2,
+      "question": "Which Combine operator allows you to transform values?",
+      "options": [
+        "assign",
+        "map",
+        "sink",
+        "receive"
+      ],
+      "answer": "map"
+    },
+    {
+      "id": 3,
+      "question": "What is the output of Just(\"Hello\") in Combine?",
+      "options": [
+        "A publisher that emits no value",
+        "A publisher that emits a single value and finishes",
+        "An infinite stream",
+        "A subject"
+      ],
+      "answer": "A publisher that emits a single value and finishes"
+    },
+    {
+      "id": 4,
+      "question": "Which Combine subject retains its current value?",
+      "options": [
+        "PassthroughSubject",
+        "CurrentValueSubject",
+        "ReplaySubject",
+        "BehaviorSubject"
+      ],
+      "answer": "CurrentValueSubject"
+    },
+    {
+      "id": 5,
+      "question": "What does sink(receiveValue:) do in Combine?",
+      "options": [
+        "Publishes a value",
+        "Subscribes and reacts to emitted values",
+        "Cancels a subscription",
+        "Creates a timer"
+      ],
+      "answer": "Subscribes and reacts to emitted values"
+    },
+    {
+      "id": 6,
+      "question": "Which Combine operator delays emissions until a time interval passes?",
+      "options": [
+        "delay",
+        "debounce",
+        "throttle",
+        "schedule"
+      ],
+      "answer": "debounce"
+    },
+    {
+      "id": 7,
+      "question": "What type does assign(to:on:) bind data to?",
+      "options": [
+        "A class property",
+        "A function",
+        "A dictionary",
+        "A subscriber"
+      ],
+      "answer": "A class property"
+    },
+    {
+      "id": 8,
+      "question": "Which type of publisher is created by URLSession.shared.dataTaskPublisher?",
+      "options": [
+        "Hot publisher",
+        "Cold publisher",
+        "Replay subject",
+        "Just"
+      ],
+      "answer": "Cold publisher"
+    },
+    {
+      "id": 9,
+      "question": "What is the primary purpose of Combine's flatMap operator?",
+      "options": [
+        "Flatten multiple publishers into a single stream",
+        "Map values to uppercase",
+        "Combine multiple streams into one",
+        "Merge unrelated publishers"
+      ],
+      "answer": "Flatten multiple publishers into a single stream"
+    },
+    {
+      "id": 10,
+      "question": "Which Combine operator cancels previous requests and keeps only the latest?",
+      "options": [
+        "merge",
+        "switchToLatest",
+        "combineLatest",
+        "flatMap"
+      ],
+      "answer": "switchToLatest"
+    },
+    {
+      "id": 11,
+      "question": "Which Swift keyword marks a function as asynchronous?",
+      "options": [
+        "async",
+        "await",
+        "defer",
+        "resume"
+      ],
+      "answer": "async"
+    },
+    {
+      "id": 12,
+      "question": "What does removeDuplicates() do in Combine?",
+      "options": [
+        "Removes all duplicates from a stream",
+        "Removes only consecutive duplicate values",
+        "Sorts the stream",
+        "Merges the stream"
+      ],
+      "answer": "Removes only consecutive duplicate values"
+    },
+    {
+      "id": 13,
+      "question": "Which operator collects multiple values into an array before publishing?",
+      "options": [
+        "merge",
+        "collect",
+        "combineLatest",
+        "sink"
+      ],
+      "answer": "collect"
+    },
+    {
+      "id": 14,
+      "question": "Which of the following is used to cancel a subscription in Combine?",
+      "options": [
+        "Cancellable",
+        "Sink",
+        "Publisher",
+        "CombineScheduler"
+      ],
+      "answer": "Cancellable"
+    },
+    {
+      "id": 15,
+      "question": "In Combine, which operator is used to control thread delivery of values?",
+      "options": [
+        "receive(on:)",
+        "subscribe(on:)",
+        "thread(on:)",
+        "dispatch(on:)"
+      ],
+      "answer": "receive(on:)"
+    },
+    {
+      "id": 16,
+      "question": "Where should Combine publishers typically live in an MVVM architecture?",
+      "options": [
+        "View",
+        "ViewController",
+        "ViewModel",
+        "Model"
+      ],
+      "answer": "ViewModel"
+    },
+    {
+      "id": 17,
+      "question": "Which of the following Combine types represents a single value in the future?",
+      "options": [
+        "PassthroughSubject",
+        "Future",
+        "CurrentValueSubject",
+        "Just"
+      ],
+      "answer": "Future"
+    },
+    {
+      "id": 18,
+      "question": "Which Combine operator filters values based on a condition?",
+      "options": [
+        "filter",
+        "map",
+        "assign",
+        "collect"
+      ],
+      "answer": "filter"
+    },
+    {
+      "id": 19,
+      "question": "Which Combine operator lets you combine the latest values from multiple publishers?",
+      "options": [
+        "merge",
+        "combineLatest",
+        "switchToLatest",
+        "zip"
+      ],
+      "answer": "combineLatest"
+    },
+    {
+      "id": 20,
+      "question": "Which Combine feature automatically manages memory for subscribers?",
+      "options": [
+        "CombineBag",
+        "AnyCancellable",
+        "CancellableToken",
+        "MemoryCleaner"
+      ],
+      "answer": "AnyCancellable"
+    }
+  ]
+}
+

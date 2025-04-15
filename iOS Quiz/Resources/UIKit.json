@@ -1,0 +1,160 @@
+
+{
+  "questions": [
+    {
+      "id": 1,
+      "question": "What is UIKit?",
+      "options": ["A layout engine", "A framework for building UI in iOS", "A database manager", "A networking tool"],
+      "answer": "A framework for building UI in iOS"
+    },
+    {
+      "id": 2,
+      "question": "Which class is the root of all view-related classes in UIKit?",
+      "options": ["UIView", "UIViewController", "UIResponder", "UIWindow"],
+      "answer": "UIView"
+    },
+    {
+      "id": 3,
+      "question": "Which UIKit class is used to control the app's screen content?",
+      "options": ["UIView", "UIApplication", "UIViewController", "UIResponder"],
+      "answer": "UIViewController"
+    },
+    {
+      "id": 4,
+      "question": "What is the purpose of a UITableView?",
+      "options": [
+        "To show a scrollable list of data in rows",
+        "To navigate between views",
+        "To create tab-based apps",
+        "To display modals"
+      ],
+      "answer": "To show a scrollable list of data in rows"
+    },
+    {
+      "id": 5,
+      "question": "Which method is called when a view is first loaded into memory?",
+      "options": ["viewDidLoad", "viewWillAppear", "loadView", "initView"],
+      "answer": "viewDidLoad"
+    },
+    {
+      "id": 6,
+      "question": "What does IBOutlet stand for?",
+      "options": ["Input Binding Layout", "Interface Builder Outlet", "Inline Block Object", "Interface Button Outlet"],
+      "answer": "Interface Builder Outlet"
+    },
+    {
+      "id": 7,
+      "question": "Which delegate method detects row selection in UITableView?",
+      "options": [
+        "tableView(_:cellForRowAt:)",
+        "tableView(_:numberOfRowsInSection:)",
+        "tableView(_:didSelectRowAt:)",
+        "tableView(_:heightForRowAt:)"
+      ],
+      "answer": "tableView(_:didSelectRowAt:)"
+    },
+    {
+      "id": 8,
+      "question": "Which class is used to create scrollable content in UIKit?",
+      "options": ["UITableView", "UIScrollView", "UIStackView", "UICollectionView"],
+      "answer": "UIScrollView"
+    },
+    {
+      "id": 9,
+      "question": "Which layout system uses constraints to position views?",
+      "options": ["Frame-based layout", "Auto Layout", "Manual layout", "Grid Layout"],
+      "answer": "Auto Layout"
+    },
+    {
+      "id": 10,
+      "question": "Which UIKit class manages a navigation stack of view controllers?",
+      "options": ["UITabBarController", "UIPageViewController", "UINavigationController", "UIViewController"],
+      "answer": "UINavigationController"
+    },
+    {
+      "id": 11,
+      "question": "What is the default transition for presenting a view controller modally?",
+      "options": ["Slide up", "Cross dissolve", "Cover vertical", "Flip horizontal"],
+      "answer": "Cover vertical"
+    },
+    {
+      "id": 12,
+      "question": "How do you dismiss a modal view controller?",
+      "options": [
+        "popViewController",
+        "dismiss(animated:completion:)",
+        "hide(animated:completion:)",
+        "exit(animated:)"
+      ],
+      "answer": "dismiss(animated:completion:)"
+    },
+    {
+      "id": 13,
+      "question": "What does a UIStackView do?",
+      "options": [
+        "Displays images",
+        "Arranges views in a horizontal or vertical line",
+        "Provides navigation",
+        "Handles user input"
+      ],
+      "answer": "Arranges views in a horizontal or vertical line"
+    },
+    {
+      "id": 14,
+      "question": "What is the purpose of IBOutlet in UIKit?",
+      "options": [
+        "To add animation to views",
+        "To create constraints",
+        "To connect UI elements to code",
+        "To handle network events"
+      ],
+      "answer": "To connect UI elements to code"
+    },
+    {
+      "id": 15,
+      "question": "Which gesture recognizer detects a single tap?",
+      "options": ["UILongPressGestureRecognizer", "UIPinchGestureRecognizer", "UISwipeGestureRecognizer", "UITapGestureRecognizer"],
+      "answer": "UITapGestureRecognizer"
+    },
+    {
+      "id": 16,
+      "question": "Which class is used to detect text input in UIKit?",
+      "options": ["UILabel", "UITextView", "UITextField", "UIButton"],
+      "answer": "UITextField"
+    },
+    {
+      "id": 17,
+      "question": "What is the correct lifecycle order of a view controller?",
+      "options": [
+        "viewWillAppear → viewDidLoad → viewDidAppear",
+        "viewDidLoad → viewWillAppear → viewDidAppear",
+        "viewDidLoad → viewDidAppear → viewWillAppear",
+        "viewDidAppear → viewDidLoad → viewWillAppear"
+      ],
+      "answer": "viewDidLoad → viewWillAppear → viewDidAppear"
+    },
+    {
+      "id": 18,
+      "question": "Which UIKit class is used to show alerts?",
+      "options": ["UIAlertView", "UIAlertController", "UIAlertManager", "UIBannerAlert"],
+      "answer": "UIAlertController"
+    },
+    {
+      "id": 19,
+      "question": "Which modifier is used in code to disable a UIButton?",
+      "options": [".enabled = false", "isDisabled = true", "isEnabled = false", ".disable()"],
+      "answer": "isEnabled = false"
+    },
+    {
+      "id": 20,
+      "question": "How do you register a custom UITableViewCell?",
+      "options": [
+        "tableView.register(MyCell.self, forCellReuseIdentifier:)",
+        "tableView.load(MyCell)",
+        "cell.register(MyCell.self)",
+        "tableView.addCell(MyCell)"
+      ],
+      "answer": "tableView.register(MyCell.self, forCellReuseIdentifier:)"
+    }
+  ]
+}

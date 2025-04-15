@@ -16,12 +16,13 @@ struct Question : Codable {
     let question : String
     let options : [String]
     let answer : String
+        var explanation : String?
     
     static let moc = Question(
         id: 1,
         question: "What programming language is primarily used for iOS app development?",
         options: [ "Java", "Kotlin", "Swift", "C#"],
-        answer: "Swift"
+        answer: "Swift", explanation: "Exp"
     )
 }
 

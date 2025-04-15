@@ -1,0 +1,144 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "question": "What is the purpose of an actor in Swift?",
+      "options": ["To define a UI component", "To perform animations", "To manage mutable state safely in concurrent environments", "To represent a protocol"],
+      "answer": "To manage mutable state safely in concurrent environments",
+      "explanation": "Actors protect their internal mutable state by allowing only one task to access it at a time, ensuring thread safety."
+    },
+    {
+      "id": 2,
+      "question": "Which keyword is used to declare an actor in Swift?",
+      "options": ["class", "struct", "actor", "enum"],
+      "answer": "actor",
+      "explanation": "Swift introduces the `actor` keyword to define an actor type for safe concurrency."
+    },
+    {
+      "id": 3,
+      "question": "What access pattern do actors enforce?",
+      "options": ["Synchronous", "Asynchronous", "Blocking", "Recursive"],
+      "answer": "Asynchronous",
+      "explanation": "Accessing actor properties or methods from outside requires `await` to ensure asynchronous, safe access."
+    },
+    {
+      "id": 4,
+      "question": "Which of the following is true about actor-isolated state?",
+      "options": ["Can be accessed freely from any thread", "Requires locks to access", "Can only be accessed within the actor or via async calls", "Is immutable"],
+      "answer": "Can only be accessed within the actor or via async calls",
+      "explanation": "Actor-isolated properties are protected and can only be safely accessed from within the actor's context or through async methods."
+    },
+    {
+      "id": 5,
+      "question": "What error will occur if you try to synchronously access an actor’s property from outside?",
+      "options": ["Compile-time error", "Runtime error", "No error", "Memory leak"],
+      "answer": "Compile-time error",
+      "explanation": "Swift enforces actor isolation at compile time, preventing unsafe synchronous access."
+    },
+    {
+      "id": 6,
+      "question": "How do you call an async method on an actor?",
+      "options": ["myActor.method()", "await myActor.method()", "myActor.method(await:)", "async myActor.method()"],
+      "answer": "await myActor.method()",
+      "explanation": "You use `await` to call an async method on an actor to ensure proper synchronization."
+    },
+    {
+      "id": 7,
+      "question": "Can actors conform to protocols?",
+      "options": ["No", "Only to actor-specific protocols", "Yes, like any other type", "Only to class-bound protocols"],
+      "answer": "Yes, like any other type",
+      "explanation": "Actors can conform to protocols just like classes and structs, though they must respect actor isolation rules."
+    },
+    {
+      "id": 8,
+      "question": "Which of the following best describes an actor’s default behavior?",
+      "options": ["Parallel execution", "Global isolation", "Serial execution of tasks", "Blocking execution"],
+      "answer": "Serial execution of tasks",
+      "explanation": "Actors execute tasks serially to maintain data consistency and prevent race conditions."
+    },
+    {
+      "id": 9,
+      "question": "Which Swift version introduced the `actor` keyword?",
+      "options": ["Swift 4", "Swift 5.0", "Swift 5.5", "Swift 6"],
+      "answer": "Swift 5.5",
+      "explanation": "`actor` was introduced in Swift 5.5 along with structured concurrency features."
+    },
+    {
+      "id": 10,
+      "question": "What will happen if two tasks try to modify an actor’s state simultaneously?",
+      "options": ["Crash", "Race condition", "One task will wait for the other", "Deadlock"],
+      "answer": "One task will wait for the other",
+      "explanation": "Actor serializes access, so concurrent tasks are automatically queued to avoid conflicts."
+    },
+    {
+      "id": 11,
+      "question": "How do you access actor-isolated state within the actor?",
+      "options": ["Directly", "With locks", "Using await", "Using DispatchQueue"],
+      "answer": "Directly",
+      "explanation": "Inside the actor itself, isolated properties can be accessed directly since no concurrency conflict exists."
+    },
+    {
+      "id": 12,
+      "question": "What is the `nonisolated` keyword used for in actors?",
+      "options": ["To remove isolation completely", "To access private properties", "To mark methods that don’t access actor state", "To lock the actor"],
+      "answer": "To mark methods that don’t access actor state",
+      "explanation": "`nonisolated` is used to declare methods or properties that don’t need actor isolation and can be called without await."
+    },
+    {
+      "id": 13,
+      "question": "Can actors inherit from other actors?",
+      "options": ["Yes", "No", "Only if final", "Only with protocol conformance"],
+      "answer": "No",
+      "explanation": "Actors cannot inherit from other actors, maintaining simplicity and isolation guarantees."
+    },
+    {
+      "id": 14,
+      "question": "Which protocol is automatically conformed to by all actor types?",
+      "options": ["Hashable", "Sendable", "Codable", "Identifiable"],
+      "answer": "Sendable",
+      "explanation": "Actors are implicitly `Sendable` to support safe transfers between concurrency domains."
+    },
+    {
+      "id": 15,
+      "question": "What is a key advantage of using actors over traditional locking mechanisms?",
+      "options": ["Better performance", "Automatic state persistence", "Simpler syntax and safety", "Supports UIKit"],
+      "answer": "Simpler syntax and safety",
+      "explanation": "Actors remove the need for manual locking, reducing complexity and preventing common bugs."
+    },
+    {
+      "id": 16,
+      "question": "What is `MainActor` used for?",
+      "options": ["To pause the actor", "To access background threads", "To ensure code runs on the main thread", "To mark private properties"],
+      "answer": "To ensure code runs on the main thread",
+      "explanation": "`MainActor` ensures that methods or properties are accessed on the main thread, useful for UI updates."
+    },
+    {
+      "id": 17,
+      "question": "How do you mark a function to be run on the main actor?",
+      "options": ["@MainThread", "@UIThread", "@MainActor", "@DispatchMain"],
+      "answer": "@MainActor",
+      "explanation": "Use `@MainActor` to guarantee that a function runs on the main thread."
+    },
+    {
+      "id": 18,
+      "question": "Can you use `Task` inside an actor?",
+      "options": ["No", "Only with MainActor", "Yes", "Only if async"],
+      "answer": "Yes",
+      "explanation": "Actors can spawn tasks using `Task` just like any other context in Swift concurrency."
+    },
+    {
+      "id": 19,
+      "question": "What does it mean if a method inside an actor is not marked `async`?",
+      "options": ["It is thread-safe", "It is unsafe", "It can’t be called from outside", "It blocks the actor"],
+      "answer": "It can’t be called from outside",
+      "explanation": "Non-async methods in actors can only be called from within the actor unless marked as `nonisolated`."
+    },
+    {
+      "id": 20,
+      "question": "What happens if you try to access actor state from a detached task?",
+      "options": ["It fails silently", "It accesses it successfully", "It results in a compiler error", "You need to await the call"],
+      "answer": "You need to await the call",
+      "explanation": "Accessing actor state from outside, including from detached tasks, requires `await` to respect isolation."
+    }
+  ]
+}
